@@ -7,16 +7,9 @@ module.exports = function(grunt) {
       build: {
         src: [
           // bower components
-            "bower_components/jquery/dist/jquery.js",
-            'bower_components/modernizr/modernizr.js',
-            'bower_components/scrollReveal.js/dist/scrollReveal.js',
-
-          // internals
-          // 'js/src/app.js',
-          // 'js/src/filters.js',
-          // 'js/src/utils.js',
-          // 'js/src/controllers/*.js',
-          // 'js/src/services/*.js'
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/modernizr/modernizr.js',
+          'bower_components/scrollReveal.js/dist/scrollReveal.js',
         ],
         dest: 'js/app.min.js'
       }

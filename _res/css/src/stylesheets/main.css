@@ -1,0 +1,152 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ */
+/* Github's Styl Guide
+ */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/globals/global.sass */
+body {
+  background-image: url("../../../img/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 1, ../sass/sections/widgets/menu.sass */
+#menu {
+  margin-top: 3rem;
+}
+/* line 4, ../sass/sections/widgets/menu.sass */
+#menu ul {
+  padding: 0 5px;
+  z-index: auto;
+}
+/* line 8, ../sass/sections/widgets/menu.sass */
+#menu .menu-item {
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  height: 64px;
+  position: relative;
+  z-index: 0;
+}
+/* line 17, ../sass/sections/widgets/menu.sass */
+#menu .menu-item li {
+  float: left;
+  position: relative;
+  border-left: 1px solid #F8F3F0;
+}
+/* line 22, ../sass/sections/widgets/menu.sass */
+#menu .menu-item li:first-child {
+  border-left: 0 none;
+}
+/* line 26, ../sass/sections/widgets/menu.sass */
+#menu .menu-item li:hover > a {
+  background: #f8f3f0;
+  border-bottom: 3px solid #4daf7b;
+}
+/* line 30, ../sass/sections/widgets/menu.sass */
+#menu .menu-item li a {
+  display: block;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #8e8071;
+  padding: 18px 23px 12px 16px;
+  border-bottom: 3px solid transparent;
+}
+/* line 41, ../sass/sections/widgets/menu.sass */
+#menu .menu-item li .icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* line 47, ../sass/sections/widgets/menu.sass */
+#menu .menu-item li .count {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  right: 6px;
+  text-align: center;
+  font-size: 9px;
+  line-height: 13px;
+  color: #fff;
+  background: #e55e3a;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}

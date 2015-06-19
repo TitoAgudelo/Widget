@@ -1,0 +1,7 @@
+/* line 1, ../../sass/globals/global.sass */
+body {
+  background-image: url("../../../img/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}

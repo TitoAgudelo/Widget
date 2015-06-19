@@ -1,0 +1,19 @@
+<div ng-controller="WidgetsCtrl">
+	<div class="row">
+		<div class="large-8 columns">
+			<div id="menu">
+				<ul class="menu-item">
+					<li class="" ng-repeat="item in items">
+						<a href="#" hidefocus="true" style="outline: none;">
+							<img src={{item.icon}} class="icon" />
+							<span>{{item.name}}</span>
+							<span ng-if="item.item > 0">
+								<span class="count">{{item.item}}</span>
+							</span>
+						</a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</div>

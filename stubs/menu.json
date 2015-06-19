@@ -1,0 +1,22 @@
+[
+	{
+		"name": "check in",
+		"icon": "_res/img/location.png",
+		"item": 3
+	},
+	{
+		"name": "events",
+		"icon": "_res/img/cora.png",
+		"item": 0
+	},
+	{
+		"name": "account",
+		"icon": "_res/img/user.png",
+		"item": 0
+	},
+	{
+		"name": "settings",
+		"icon": "_res/img/setting.png",
+		"item": 0
+	}
+]
