@@ -1,7 +1,22 @@
 /* line 1, ../../sass/globals/global.sass */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 4, ../../sass/globals/global.sass */
 body {
   background-image: url("../../../img/background.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+/* line 9, ../../sass/globals/global.sass */
+body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 {
   font-family: "Open Sans", sans-serif;
+}
+
+/* line 12, ../../sass/globals/global.sass */
+.clearfix:before, .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
 }

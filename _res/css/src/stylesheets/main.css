@@ -71,11 +71,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/globals/global.sass */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 4, ../sass/globals/global.sass */
 body {
   background-image: url("../../../img/background.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+/* line 9, ../sass/globals/global.sass */
+body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 {
   font-family: "Open Sans", sans-serif;
+}
+
+/* line 12, ../sass/globals/global.sass */
+.clearfix:before, .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
 }
 
 /* line 1, ../sass/sections/widgets/bio.sass */
@@ -85,20 +100,17 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
-  -moz-box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
-  box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
   margin-bottom: 30px;
   position: relative;
   z-index: 0;
 }
-/* line 15, ../sass/sections/widgets/bio.sass */
+/* line 12, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-middle {
   position: relative;
   padding: 15px 10px 21px 111px;
   min-height: 116px;
 }
-/* line 20, ../sass/sections/widgets/bio.sass */
+/* line 17, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-middle .profile-photo {
   position: absolute;
   top: 13px;
@@ -112,20 +124,20 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-/* line 33, ../sass/sections/widgets/bio.sass */
+/* line 30, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-middle .profile-photo img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-/* line 38, ../sass/sections/widgets/bio.sass */
+/* line 35, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-middle h4 {
   font-size: 26px;
   font-weight: 600;
   color: #5c5146;
   margin-bottom: 10px;
 }
-/* line 44, ../sass/sections/widgets/bio.sass */
+/* line 41, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-middle .resume {
   display: block;
   color: #8e8071;
@@ -133,14 +145,14 @@ body {
   line-height: 13px;
   text-rendering: optimizeLegibility;
 }
-/* line 52, ../sass/sections/widgets/bio.sass */
+/* line 49, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul {
   overflow: hidden;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
-/* line 58, ../sass/sections/widgets/bio.sass */
+/* line 55, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul li {
   float: left;
   background: #f5ede8;
@@ -154,23 +166,23 @@ body {
   padding: 10px;
   width: 33.33333%;
 }
-/* line 71, ../sass/sections/widgets/bio.sass */
+/* line 68, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul li:hover > a {
   color: #e05033;
 }
-/* line 74, ../sass/sections/widgets/bio.sass */
+/* line 71, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul:first-child {
   border-left: 0 none;
   -webkit-border-radius: 0 0 0 5px;
   -moz-border-radius: 0 0 0 5px;
   border-radius: 0 0 0 5px;
 }
-/* line 80, ../sass/sections/widgets/bio.sass */
+/* line 77, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul:first-child a {
   padding: 10px 5px;
   color: #7b6d5e;
 }
-/* line 84, ../sass/sections/widgets/bio.sass */
+/* line 81, ../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul:first-child a .icon-bottom {
   vertical-align: middle;
   margin-right: 8px;
@@ -247,4 +259,188 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+
+/* line 1, ../sass/sections/widgets/statistics.sass */
+.widget-statistics {
+  margin-top: 3rem;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+}
+/* line 11, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-title {
+  background-image: url("../../../img/statitics-header.png");
+  background-size: 100% 100%;
+  height: 160px;
+  padding: 18px;
+}
+/* line 17, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-title .rate-up {
+  font-size: 24px;
+  color: #fff;
+  background: url(../../../img/statistics-dir.png) 0 15px no-repeat;
+}
+/* line 22, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-title .rate {
+  display: block;
+  padding-left: 12px;
+  text-rendering: optimizeLegibility;
+}
+/* line 27, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-title .rate-down {
+  color: #b7dfc2;
+  font-size: 14px;
+}
+/* line 31, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body {
+  padding: 33px 20px 38px;
+}
+/* line 34, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .time {
+  font-size: 12px;
+  color: #bfb8b1;
+}
+/* line 38, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .location {
+  margin-bottom: 20px;
+  font-size: 21px;
+  color: #8e8071;
+  cursor: pointer;
+}
+/* line 44, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .location:hover {
+  font-size: 21px;
+  color: #bfb8b1;
+}
+/* line 48, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .shares {
+  margin-bottom: 24px;
+  width: 100%;
+  display: table;
+}
+/* line 53, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .shares li {
+  float: left;
+  width: 50%;
+  background: #f6f0ec;
+  border-left: 1px solid #fff;
+}
+/* line 59, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .shares li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8e8071;
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 67, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .shares li a:hover > * {
+  color: #4daf7b;
+}
+/* line 71, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .shares li a strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8e8071;
+  text-align: center;
+}
+/* line 78, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .shares li a span {
+  font-size: 12px;
+  color: #ad9e8e;
+}
+/* line 83, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .graph .graph-title {
+  font-size: 14px;
+  color: #b4b0aa;
+  margin-bottom: 8px;
+}
+/* line 89, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .graph .graph-content span {
+  background: #4daf7b;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+/* line 101, ../sass/sections/widgets/statistics.sass */
+.widget-statistics .statistics-body .graph li {
+  padding-bottom: 0;
+}
+
+/* line 1, ../sass/sections/widgets/tabs.sass */
+.tabs {
+  margin-top: 3rem;
+}
+/* line 5, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs_menu li {
+  border: 1px solid #e4dbca;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 50px;
+  line-height: 46px;
+  margin-right: 3px;
+  margin-top: 0;
+  float: left;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+}
+/* line 26, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs_menu li a {
+  font-weight: 600;
+  padding: 0 16px;
+  color: #8e8071;
+  font-size: 16px;
+}
+/* line 33, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs_menu li.active {
+  border: 1px solid #fff;
+  background: #fff;
+}
+/* line 37, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content {
+  padding: 0;
+  padding-top: 50px;
+  overflow: visible;
+  position: relative;
+  top: -5px;
+  z-index: 0;
+  padding: 36px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+}
+/* line 53, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content h6 {
+  font-weight: 700;
+  color: #8e8071;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0;
+  margin-bottom: 30px;
 }

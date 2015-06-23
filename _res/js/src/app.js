@@ -25,7 +25,8 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
 app.run(['$rootScope', '$http',
 	function($rootScope, $http) {
 			var jsonListMenu = 'stubs/menu.json',
-				jsonProfile = 'stubs/profile.json';
+				jsonProfile = 'stubs/profile.json',
+				jsonLocation = 'stubs/location.json';
 
 			$http.get(jsonListMenu).success(function(data){
 				$rootScope.items = data;
@@ -33,6 +34,10 @@ app.run(['$rootScope', '$http',
 
 			$http.get(jsonProfile).success(function(data){
 				$rootScope.profiles = data;
+			});
+
+			$http.get(jsonLocation).success(function(data){
+				$rootScope.locations = data;
 			});
 		}
 	]);

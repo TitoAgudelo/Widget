@@ -21,8 +21,96 @@
 			</div>
 			<!-- Statistics & Tabs -->
 			<div class="row">
-				<div class="large-6 columns"></div>
-				<div class="large-6 columns"></div>
+				<div class="large-6 columns">
+					<div class="widget-statistics" ng-repeat="location in locations">
+                        <div class="statistics-title">
+                            <span class="rate rate-up">{{location.rateUp}}</span>
+                            <span class="rate rate-down">{{location.rateDown}}</span>
+                        </div>
+                        <div class="statistics-body">
+                            <div class="time">{{location.time}}</div>
+                            <h4 class="location">{{location.location}}</h4>
+                            <ul class="shares">
+                                <li>
+                                	<a href="#">
+                                		<strong>{{location.shares.traded}}</strong>
+                                		<span>Shares Traded</span>
+                                	</a>
+                                </li>
+                                <li>
+                                	<a href="#">
+                                		<strong>{{location.shares.market}}</strong>
+                                		<span>Market Cap</span>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="graph small-block-grid-2">
+								<li>
+									<div>
+										<h6 class="graph-title">AAPL</h6>
+										<div class="graph-content">
+											<img ng-src="{{location.aapl}}" alt="grap">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h6 class="graph-title">Yearly Change</h6>
+										<div class="graph-content">
+											<span>{{location.yearly}}</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+                        </div>
+                    </div>
+				</div>
+				<div class="large-6 columns">
+					<div class="tabs styled widget-stats">
+
+                        <ul class="tabs_menu clearfix">
+                            <li class="active">
+                            	<a href="#diagram">Diagram Stats</a>
+                            </li>
+                            <li class="last">
+                            	<a href="#month">Month Report</a>
+                            </li>
+                        </ul>
+
+                        <div class="tabs-content clearfix">
+                            <div class="tab-pane fade active in" id="diagram">
+                                <h6>Data Transfer</h6>
+
+                                <div id="container-hihg" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                                
+                                <ul class="stats-data clearfix">
+                                    <li class="first"><a href="#" hidefocus="true" style="outline: none;"><span>audio</span><strong>55%</strong></a></li>
+                                    <li class="red"><a href="#" hidefocus="true" style="outline: none;"><span>video</span><strong>23%</strong></a></li>
+                                    <li class="yellow last"><a href="#" hidefocus="true" style="outline: none;"><span>photo</span><strong>17%</strong></a></li>
+                                </ul>
+                                <ul class="stats-links clearfix">
+                                    <li class="first"><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon1"></i><br><span>upload files</span></a></li>
+                                    <li><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon2"></i><br><span>share link</span></a></li>
+                                    <li class="last"><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon3"></i><br><span>back up</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="month">
+                                <h6>Data chart</h6>
+                                <ul class="stats-data clearfix">
+                                    <li class="first"><a href="#" hidefocus="true" style="outline: none;"><span>audio</span><strong>50%</strong></a></li>
+                                    <li class="red"><a href="#" hidefocus="true" style="outline: none;"><span>video</span><strong>26%</strong></a></li>
+                                    <li class="yellow last"><a href="#" hidefocus="true" style="outline: none;"><span>photo</span><strong>18%</strong></a></li>
+                                </ul>
+                                <ul class="stats-links clearfix">
+                                    <li class="first"><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon1"></i><br><span>upload files</span></a></li>
+                                    <li><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon2"></i><br><span>share link</span></a></li>
+                                    <li class="last"><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon3"></i><br><span>back up</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+				</div>
 			</div>
 		</div>
 		<div class="large-4 columns">
