@@ -24,9 +24,15 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
 
 app.run(['$rootScope', '$http',
 	function($rootScope, $http) {
-			var jsonListMenu = 'stubs/menu.json';
-         	$http.get(jsonListMenu).success(function(data){
-     			$rootScope.items = data;
-         	});
+			var jsonListMenu = 'stubs/menu.json',
+				jsonProfile = 'stubs/profile.json';
+
+			$http.get(jsonListMenu).success(function(data){
+				$rootScope.items = data;
+			});
+
+			$http.get(jsonProfile).success(function(data){
+				$rootScope.profiles = data;
+			});
 		}
 	]);

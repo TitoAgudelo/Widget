@@ -75,14 +75,23 @@
   width: 33.33333%;
 }
 /* line 71, ../../../sass/sections/widgets/bio.sass */
+.widget-profile .profile-bottom ul li:hover > a {
+  color: #e05033;
+}
+/* line 74, ../../../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul:first-child {
   border-left: 0 none;
   -webkit-border-radius: 0 0 0 5px;
   -moz-border-radius: 0 0 0 5px;
   border-radius: 0 0 0 5px;
 }
-/* line 77, ../../../sass/sections/widgets/bio.sass */
+/* line 80, ../../../sass/sections/widgets/bio.sass */
 .widget-profile .profile-bottom ul:first-child a {
   padding: 10px 5px;
   color: #7b6d5e;
+}
+/* line 84, ../../../sass/sections/widgets/bio.sass */
+.widget-profile .profile-bottom ul:first-child a .icon-bottom {
+  vertical-align: middle;
+  margin-right: 8px;
 }

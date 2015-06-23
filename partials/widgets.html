@@ -1,39 +1,71 @@
 <div ng-controller="WidgetsCtrl">
 	<div class="row">
 		<div class="large-8 columns">
-			<div id="menu">
-				<ul class="menu-item">
-					<li class="" ng-repeat="item in items">
-						<a href="#" hidefocus="true" style="outline: none;">
-							<img src={{item.icon}} class="icon" />
-							<span>{{item.name}}</span>
-							<span ng-if="item.item > 0">
-								<span class="count">{{item.item}}</span>
-							</span>
-						</a>
-					</li>
-				</ul>	
+			<!-- Menu -->
+			<div class="row">
+				<div class="large-12 columns">
+					<div id="menu">
+						<ul class="menu-item">
+							<li class="" ng-repeat="item in items">
+								<a href="#" hidefocus="true">
+									<img ng-src="{{item.icon}}" class="icon" />
+									<span>{{item.name}}</span>
+									<span ng-if="item.item > 0">
+										<span class="count">{{item.item}}</span>
+									</span>
+								</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<!-- Statistics & Tabs -->
+			<div class="row">
+				<div class="large-6 columns"></div>
+				<div class="large-6 columns"></div>
 			</div>
 		</div>
-		
-
 		<div class="large-4 columns">
-			<div class="widget-profile">
+			<div ng-repeat="profile in profiles" class="widget-profile">
                 <div class="profile-image">
-                	<img src="_res/img/profile.png" alt="">
+                	<img ng-src="{{profile.image}}" alt="cover">
                 </div>
                 <div class="profile-middle">
                     <div class="profile-photo">
-                    	<img src="_res/img/profile-middle.png" alt="">
+                    	<img ng-src="{{profile.shortcut}}" alt="profile">
                     </div>
-                    <h4>John Raymons</h4>
-                    <span class="resume">Your talent amazes! This is awesome. Excited to see the final product.</span>
+                    <h4>{{profile.name}}</h4>
+                    <span class="resume">{{profile.resume}}</span>
                 </div>
                 <div class="profile-bottom">
                     <ul class="clearfix">
-                        <li class="post-view first"><a href="#" hidefocus="true" style="outline: none;"><span><i class="icon-post"></i>172</span></a></li>
-                        <li class="post-comm"><a href="#" hidefocus="true" style="outline: none;"><span><i class="icon-post"></i>34</span></a></li>
-                        <li class="post-like last"><a href="#" hidefocus="true" style="outline: none;"><span><i class="icon-post"></i>210</span></a></li>
+                        <li ng-mouseenter="imageShow = true" ng-mouseleave="imageShow = false">
+                        	<a href="#" hidefocus="true">
+                        		<span>
+                        			<img ng-show="imageShow" src="_res/img/eye-red.png" class="icon-bottom" />
+                        			<img ng-hide="imageShow" src="_res/img/eye-dark.png" class="icon-bottom" />
+                        			{{profile.show}}
+                        		</span>
+                        	</a>
+                        </li>
+                        <li ng-mouseenter="imageMessage = true" ng-mouseleave="imageMessage = false">
+                        	<a href="#" hidefocus="true">
+                        		<span>
+                        			<img ng-show="imageMessage" src="_res/img/message-red.png" class="icon-bottom" />
+                        			<img ng-hide="imageMessage" src="_res/img/message-dark.png" class="icon-bottom" />
+                        			{{profile.message}}
+                        		</span>
+                        	</a>
+                        </li>
+                        <li ng-mouseenter="imageHeard = true" ng-mouseleave="imageHeard = false">
+                        	<a href="#" hidefocus="true">
+                        		<span>
+                        			<img ng-show="imageHeard" src="_res/img/heard-red.png" class="icon-bottom" />
+                        			<img ng-hide="imageHeard" src="_res/img/heard-dark.png" class="icon-bottom" />
+                        			{{profile.heard}}
+                        		</span>
+                        	</a>
+                        </li>
                     </ul>
                 </div>
             </div>
