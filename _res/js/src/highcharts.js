@@ -1,54 +1,71 @@
-$(function () {
-    $('#container-hihg').highcharts({
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: 0,
-            plotShadow: false
-        },
-        title: {
-            text: 'Browser<br>shares',
-            align: 'center',
-            verticalAlign: 'middle',
-            y: 50
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                dataLabels: {
-                    enabled: true,
-                    distance: -50,
-                    style: {
-                        fontWeight: 'bold',
-                        color: 'white',
-                        textShadow: '0px 1px 2px black'
-                    }
+$(function() {
+        // Create the chart
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container',
+                type: 'pie',
+                margin: 0,
+                width: 240,
+                height: 240
+            },
+            title: {
+                useHTML: true,
+                text: '<span id="files">2,435 files</span><br><span id="space">47gb</span>',
+                align: 'center',
+                verticalAlign: 'middle',
+                y: -10
+            },
+            subtitle: {
+                text: '',
+                style: {
+                    display: 'none'
+                }
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
+                }
+            },
+            exporting: { 
+                enabled: false 
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'Browsers',
+                data: [
+                {
+                    name: "Audio",
+                    y: 55,
+                    color: "#4daf7b"
                 },
-                startAngle: -90,
-                endAngle: 90,
-                center: ['50%', '75%']
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Browser share',
-            innerSize: '50%',
-            data: [
-                ['Firefox',   45.0],
-                ['IE',       26.8],
-                ['Chrome', 12.8],
-                ['Safari',    8.5],
-                ['Opera',     6.2],
+                {
+                    name: "Video",
+                    y: 23,
+                    color: "#e55f3b"
+                },
+                {
+                    name: "Photos",
+                    y: 17,
+                    color: "#ebc85e"
+                },
                 {
                     name: 'Others',
-                    y: 0.7,
-                    dataLabels: {
-                        enabled: false
-                    }
+                    y: 5.0,
+                    color: "#f4ede7"
+                }],
+                size: '100%',
+                innerSize: '50%',
+                showInLegend:false,
+                dataLabels: {
+                    enabled: false
                 }
-            ]
-        }]
+            }]
+        });
     });
-});
-

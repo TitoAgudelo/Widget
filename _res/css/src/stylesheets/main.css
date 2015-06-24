@@ -78,7 +78,7 @@ html {
 /* line 4, ../sass/globals/global.sass */
 body {
   background-image: url("../../../img/background.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100%;
 }
 /* line 9, ../sass/globals/global.sass */
@@ -410,7 +410,7 @@ body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 
 .tabs .tabs_menu li a {
   font-weight: 600;
   padding: 0 16px;
-  color: #8e8071;
+  color: white;
   font-size: 16px;
 }
 /* line 33, ../sass/sections/widgets/tabs.sass */
@@ -419,6 +419,10 @@ body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 
   background: #fff;
 }
 /* line 37, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs_menu li.active a {
+  color: #8e8071;
+}
+/* line 41, ../sass/sections/widgets/tabs.sass */
 .tabs .tabs-content {
   padding: 0;
   padding-top: 50px;
@@ -426,7 +430,6 @@ body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 
   position: relative;
   top: -5px;
   z-index: 0;
-  padding: 36px;
   background: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -435,7 +438,7 @@ body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 
   position: relative;
   z-index: 0;
 }
-/* line 53, ../sass/sections/widgets/tabs.sass */
+/* line 56, ../sass/sections/widgets/tabs.sass */
 .tabs .tabs-content h6 {
   font-weight: 700;
   color: #8e8071;
@@ -443,4 +446,110 @@ body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 
   text-align: center;
   letter-spacing: 0;
   margin-bottom: 30px;
+}
+/* line 64, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content #container {
+  width: 240px;
+  margin: 0 auto 40px;
+}
+/* line 68, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content #container #files {
+  font-size: 12px;
+  color: #e55e3a;
+  font-weight: bold;
+}
+/* line 73, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content #container #space {
+  color: #8e8071;
+  font-weight: 900;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+/* line 80, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .legend li {
+  float: left;
+  width: 33.33333%;
+}
+/* line 84, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .legend li a {
+  display: block;
+  margin-left: 1px;
+  text-align: center;
+  padding: 16px 5px 19px;
+  background: #f6f0ec;
+}
+/* line 91, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .legend li a span, .tabs .tabs-content .legend li a strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #a09b96;
+  margin-bottom: 2px;
+}
+/* line 98, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .legend li a strong {
+  font-size: 29px;
+  color: #8e8071;
+}
+/* line 102, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .legend li a.green {
+  border-top: 4px solid #4daf7b;
+}
+/* line 105, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .legend li a.red {
+  border-top: 4px solid #e55e3a;
+}
+/* line 108, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .legend li a.yellow {
+  border-top: 4px solid #ebc85e;
+}
+/* line 111, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .share {
+  background: #776b5e;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+/* line 119, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .share li {
+  float: left;
+  width: 33.33333%;
+}
+/* line 124, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .share li:first-child a {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+}
+/* line 129, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .share li:hover {
+  background: #64584c;
+}
+/* line 132, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .share li a {
+  border-top: 0 none;
+  margin-left: 0;
+  background: none;
+  padding: 10px 5px;
+  display: block;
+}
+/* line 139, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .share li a img {
+  margin: 0;
+  margin-bottom: 5px;
+  width: 31px;
+  height: 25px;
+  margin: 0 30%;
+}
+/* line 146, ../sass/sections/widgets/tabs.sass */
+.tabs .tabs-content .share li a span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-top: 5px;
 }

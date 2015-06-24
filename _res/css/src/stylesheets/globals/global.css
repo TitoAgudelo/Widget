@@ -6,7 +6,7 @@ html {
 /* line 4, ../../sass/globals/global.sass */
 body {
   background-image: url("../../../img/background.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100%;
 }
 /* line 9, ../../sass/globals/global.sass */

@@ -10,8 +10,8 @@ module.exports = function(grunt) {
           'bower_components/jquery/dist/jquery.js',
           'bower_components/modernizr/modernizr.js',
           'bower_components/scrollReveal.js/dist/scrollReveal.js',
-          'js/highcharts/highcharts.js',
-          'js/highcharts/odules/exporting.js',
+          // 'js/highcharts/highcharts.js',
+          // 'js/highcharts/modules/exporting.js',
         ],
         dest: 'js/app.min.js'
       }

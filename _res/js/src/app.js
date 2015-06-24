@@ -28,6 +28,8 @@ app.run(['$rootScope', '$http',
 				jsonProfile = 'stubs/profile.json',
 				jsonLocation = 'stubs/location.json';
 
+			$rootScope.viewTab =  false;
+
 			$http.get(jsonListMenu).success(function(data){
 				$rootScope.items = data;
 			});
