@@ -1,0 +1,90 @@
+/* line 1, ../../../sass/sections/widgets/profile.sass */
+.widget_categories {
+  margin-top: 3rem;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+}
+/* line 11, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-title {
+  background: #b1a599;
+  padding: 33px 20px 37px 122px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+/* line 23, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-title .widget-photo {
+  top: 17px;
+  left: 18px;
+  border: 1px solid #8b7f73;
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  overflow: hidden;
+  border: 1px solid #BAB8B3;
+  padding: 7px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+/* line 37, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-title .widget-photo img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+/* line 42, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-title h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+/* line 50, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-title .subtitle {
+  font-size: 12px;
+  color: #857a70;
+  text-transform: none;
+}
+/* line 55, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-body {
+  padding: 12px 0;
+}
+/* line 58, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-body li {
+  position: relative;
+}
+/* line 62, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-body li:hover a {
+  border-left: 3px solid #40a268;
+  background: #f6f0ec;
+}
+/* line 66, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-body li a {
+  display: block;
+  padding: 12px 32px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b6d5e;
+  position: relative;
+  border-left: 3px solid transparent;
+}
+/* line 75, ../../../sass/sections/widgets/profile.sass */
+.widget_categories .widget-body li a img {
+  float: right;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}

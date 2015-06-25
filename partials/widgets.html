@@ -67,6 +67,47 @@
 				</div>
 				<div class="large-6 columns">
 					
+					<div class="widget_categories">
+                        <div class="widget-title">
+                            <div class="widget-photo">
+                            	<img src="_res/img/photo.png" alt="">
+                            </div>
+                            <h6>Courtney<br>Timmons</h6>
+                            <span class="subtitle">15,323 followers</span>
+                        </div>
+                        <div class="widget-body">
+                            <ul>
+                                <li class="first" ng-mouseenter="imageUser = true" ng-mouseleave="imageUser = false">
+                                	<a href="#">
+                                		<img ng-hide="imageUser" src="_res/img/categories-user-dark.png" class="ico-cat" />
+                                		<img ng-show="imageUser" src="_res/img/categories-user-red.png" class="ico-cat" />
+                                		<span>Edit user</span>
+                                	</a>
+                                </li>
+                                <li ng-mouseenter="imageStatistics = true" ng-mouseleave="imageStatistics = false">
+                                	<a href="#">
+                                		<img ng-hide="imageStatistics" src="_res/img/categories-statistics-dark.png" class="ico-cat" />
+                                		<img ng-show="imageStatistics" src="_res/img/categories-statistics-red.png" class="ico-cat" />
+                                		<span>Web statistics</span>
+                                	</a>
+                                </li>
+                                <li ng-mouseenter="imageSetting = true" ng-mouseleave="imageSetting = false">
+                                	<a href="#">
+                                		<img ng-hide="imageSetting" src="_res/img/categories-setting-dark.png" class="ico-cat" />
+                                		<img ng-show="imageSetting" src="_res/img/categories-setting-red.png" class="ico-cat" />
+                                		<span>Upload settings</span>
+                                	</a>
+                                </li>
+                                <li class="last" ng-mouseenter="imageLocation = true" ng-mouseleave="imageLocation = false">
+                                	<a href="#">
+                                		<img ng-hide="imageLocation" src="_res/img/categories-location-dark.png" class="ico-cat" />
+                                		<img ng-show="imageLocation" src="_res/img/categories-location-red.png" class="ico-cat" />
+                                		<span>Events</span>
+                                	</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
 				</div>
 			</div>
