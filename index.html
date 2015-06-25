@@ -38,16 +38,16 @@
 				<div class="tabs styled widget-stats">
 
 	                <ul class="tabs_menu clearfix">
-	                    <li class="active">
-	                    	<a ng-class="{ active: isActive('#diagram')}" href="#diagram">Diagram Stats</a>
+	                    <li ng-class="{active: tab}">
+	                    	<a ng-click="isActive('#diagrama')" href="#diagrama">Diagram Stats</a>
 	                    </li>
-	                    <li class="last">
-	                    	<a ng-class="{ active: isActive('#month')}" href="#month">Month Report</a>
+	                    <li ng-class="{active: !tab}">
+	                    	<a ng-click="isActive('#month')" href="#month">Month Report</a>
 	                    </li>
 	                </ul>
 
 	                <div class="tabs-content clearfix">
-	                    <div class="tab-diagram" ng-hide="viewTab">
+	                    <div class="tab-diagram" ng-show="viewTab">
 	                        <h6>Data Transfer</h6>
 
 	                        <div id="container"></div>
@@ -90,7 +90,7 @@
 	                            </li>
 	                        </ul>
 	                    </div>
-	                    <div class="tab-month" ng-show="viewTab">
+	                    <div class="tab-month" ng-hide="viewTab">
 	                        <h6>Data chart</h6>
 	                        <ul class="stats-data clearfix">
 	                            <li class="first">
