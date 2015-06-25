@@ -53,19 +53,9 @@
 	                        <div id="container"></div>
 	                        
 	                        <ul class="legend clearfix">
-	                            <li>
-	                            	<a class="green" href="#">
-	                            		<span>audio</span><strong>55%</strong>
-	                            	</a>
-	                            </li>
-	                            <li>
-	                            	<a class="red" href="#">
-	                            		<span>video</span><strong>23%</strong>
-	                            	</a>
-	                            </li>
-	                            <li>
-	                            	<a  class="yellow" href="#">
-	                            		<span>photo</span><strong>17%</strong>
+	                            <li ng-repeat="diagram in diagrams">
+	                            	<a class={{diagram.class}} href="#">
+	                            		<span>{{diagram.name}}</span><strong>{{diagram.porcentage}}</strong>
 	                            	</a>
 	                            </li>
 	                        </ul>
@@ -92,27 +82,33 @@
 	                    </div>
 	                    <div class="tab-month" ng-hide="viewTab">
 	                        <h6>Data chart</h6>
-	                        <ul class="stats-data clearfix">
-	                            <li class="first">
-	                            	<a href="#">
-	                            		<span>audio</span><strong>50%</strong>
-	                            	</a>
-	                            </li>
-	                            <li class="red">
-	                            	<a href="#">
-	                            		<span>video</span><strong>26%</strong>
-	                            	</a>
-	                            </li>
-	                            <li class="yellow last">
-	                            	<a href="#">
-	                            		<span>photo</span><strong>18%</strong>
+	                        <div id="containerData"></div>
+	                        <ul class="legend clearfix">
+	                            <li ng-repeat="diagram in diagrams">
+	                            	<a class={{diagram.class}} href="#">
+	                            		<span>{{diagram.name}}</span><strong>{{diagram.porcentage}}</strong>
 	                            	</a>
 	                            </li>
 	                        </ul>
-	                        <ul class="stats-links clearfix">
-	                            <li class="first"><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon1"></i><br><span>upload files</span></a></li>
-	                            <li><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon2"></i><br><span>share link</span></a></li>
-	                            <li class="last"><a href="#" hidefocus="true" style="outline: none;"><i class="stats-icon stats-icon3"></i><br><span>back up</span></a></li>
+	                        <ul class="share clearfix">
+	                            <li class="first">
+	                            	<a href="#">
+	                            		<img src="_res/img/share1.png" class="share-icon" /><br>
+	                            		<span>upload files</span>
+	                            	</a>
+	                            </li>
+	                            <li>
+	                            	<a href="#">
+	                            		<img src="_res/img/share2.png" class="share-icon" /><br>
+	                            		<span>share link</span>
+	                            	</a>
+	                            </li>
+	                            <li class="last">
+	                            	<a href="#">
+	                            		<img src="_res/img/share3.png" class="share-icon" /><br>
+	                            		<span>back up</span>
+	                            	</a>
+	                            </li>
 	                        </ul>
 	                    </div>
 	                </div>
@@ -120,7 +116,6 @@
             </div>
 		</div>
 	</div>
-
 	
 	<!-- import grunt file js building -->
 	<script type="text/javascript" src="_res/js/app.min.js"></script>

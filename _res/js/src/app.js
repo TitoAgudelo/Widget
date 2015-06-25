@@ -26,7 +26,8 @@ app.run(['$rootScope', '$http',
 	function($rootScope, $http) {
 			var jsonListMenu = 'stubs/menu.json',
 				jsonProfile = 'stubs/profile.json',
-				jsonLocation = 'stubs/location.json';
+				jsonLocation = 'stubs/location.json',
+				jsonData = 'stubs/dataTransfer.json';
 
 			$http.get(jsonListMenu).success(function(data){
 				$rootScope.items = data;
@@ -38,6 +39,10 @@ app.run(['$rootScope', '$http',
 
 			$http.get(jsonLocation).success(function(data){
 				$rootScope.locations = data;
+			});
+
+			$http.get(jsonData).success(function(data){
+				$rootScope.diagrams = data;
 			});
 		}
 	]);
