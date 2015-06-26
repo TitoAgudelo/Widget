@@ -1,6 +1,6 @@
 <div ng-controller="WidgetsCtrl">
 	<div class="row">
-		<div class="large-8 columns">
+		<div class="large-8 medium-8 small-12 columns">
 			<!-- Menu -->
 			<div class="row">
 				<div class="large-12 columns">
@@ -21,7 +21,7 @@
 			</div>
 			<!-- Statistics & Tabs -->
 			<div class="row">
-				<div class="large-6 columns">
+				<div class="large-6 medium-6 small-12 columns">
 					<div class="widget-statistics" ng-repeat="location in locations">
                         <div class="statistics-title">
                             <span class="rate rate-up">{{location.rateUp}}</span>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="large-6 columns">		
+				<div class="large-6 medium-6 small-12 columns">		
 					<div class="widget_categories" ng-repeat="category in categories">
                         <div class="widget-title">
                             <div class="widget-photo">
@@ -111,7 +111,7 @@
 	                    <ul class="dropdown-container">
 	                        <li class="first parent">
 	                        	<a href="#">
-	                        		<i class="icon-menu icon-menu5"></i>
+	                        		<img src="_res/img/user-round.png" class="icon-menu icon-menu5" />
 	                        		<span>{{dropdown.title}}</span>
 	                        	</a>
 	                            <ul>
@@ -128,7 +128,7 @@
 	                        </li>
 	                        <li class="last">
 	                        	<a href="#">
-	                        		<i class="icon-menu icon-menu6"></i>
+	                        		<img src="_res/img/pencil-dark.png" class="icon-menu icon-menu5" />
 	                        		<span>{{dropdown.edit}}</span>
 	                        	</a>
 	                        </li>
@@ -137,7 +137,7 @@
                 </div>
 			</div>
 		</div>
-		<div class="large-4 columns">
+		<div class="large-4 medium-4 small-12 columns">
 			<div ng-repeat="profile in profiles" class="widget-profile">
                 <div class="profile-image">
                 	<img ng-src="{{profile.image}}" alt="cover">

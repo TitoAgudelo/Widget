@@ -54,10 +54,18 @@
   width: 125px;
 }
 /* line 50, ../../../sass/sections/widgets/dropdown.sass */
+.widget-dropdown .dropdown-container li .icon-menu {
+  vertical-align: middle;
+}
+/* line 53, ../../../sass/sections/widgets/dropdown.sass */
+.widget-dropdown .dropdown-container li span {
+  font-size: 14px;
+}
+/* line 56, ../../../sass/sections/widgets/dropdown.sass */
 .widget-dropdown .dropdown-container li.first {
   border-left: 0 none;
 }
-/* line 53, ../../../sass/sections/widgets/dropdown.sass */
+/* line 59, ../../../sass/sections/widgets/dropdown.sass */
 .widget-dropdown .dropdown-container ul {
   position: absolute;
   top: -9999px;
@@ -67,7 +75,7 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 62, ../../../sass/sections/widgets/dropdown.sass */
+/* line 68, ../../../sass/sections/widgets/dropdown.sass */
 .widget-dropdown .dropdown-container ul a {
   font-size: 13px;
   line-height: 17px;
@@ -76,12 +84,12 @@
   border-left: 3px solid transparent;
   border-bottom: 0 none;
 }
-/* line 70, ../../../sass/sections/widgets/dropdown.sass */
+/* line 76, ../../../sass/sections/widgets/dropdown.sass */
 .widget-dropdown .dropdown-container ul a:hover {
   background: #f8f3f0;
   border-left: 3px solid #4daf7b;
 }
-/* line 74, ../../../sass/sections/widgets/dropdown.sass */
+/* line 80, ../../../sass/sections/widgets/dropdown.sass */
 .widget-dropdown .dropdown-container a {
   display: block;
   font-size: 17px;
