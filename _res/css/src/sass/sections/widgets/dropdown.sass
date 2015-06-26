@@ -1,0 +1,83 @@
+.widget-dropdown
+	.dropdown-container
+		background: #fff
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+		border-radius: 5px
+		margin-bottom: 30px
+		height: 65px
+		position: relative
+		padding: 0 5px
+		z-index: auto
+
+		li
+			float: left
+			position: relative
+			border-left: 1px solid #F8F3F0
+
+			a
+				font-size: 15px
+				padding: 18px 20px 12px 15px
+				display: block
+				font-size: 17px
+				line-height: 30px
+				font-weight: 700
+				text-transform: uppercase
+				letter-spacing: -1px
+				color: #8e8071
+				padding: 18px 23px 12px 16px
+				border-bottom: 3px solid transparent
+				cursor: pointer
+
+				.ico-menu
+					width: 30px
+					height: 30px
+					vertical-align: middle
+					margin-right: 10px
+
+			&:hover
+				background: #f8f3f0
+				border-bottom: 3px solid #4daf7b
+
+				> ul
+					top: 65px
+					left: 0
+					margin-left: 0
+
+					li
+						width: 125px
+
+		li.first
+			border-left: 0 none
+
+		ul
+			position: absolute
+			top: -9999px
+			z-index: 9999
+			width: 100%
+			-webkit-border-radius: 3px
+			-moz-border-radius: 3px
+			border-radius: 3px
+
+			a
+				font-size: 13px
+				line-height: 17px
+				padding: 10px 16px !important
+				background: #fff
+				border-left: 3px solid transparent
+				border-bottom: 0 none
+
+				&:hover
+					background: #f8f3f0
+					border-left: 3px solid #4daf7b
+
+		a
+			display: block
+			font-size: 17px
+			line-height: 30px
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: -1px
+			color: #8e8071
+			padding: 18px 23px 12px 16px
+			border-bottom: 3px solid transparent

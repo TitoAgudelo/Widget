@@ -20,7 +20,12 @@
 			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
+					<li ng-hide="true" ng-model="langu"></li>
 					<li>
+						<span><a ng-class="{active: !languages}" href="#" ng-click="changeLanguage('en')">EN</a></span>
+					</li>
+					<li>
+						<span><a ng-class="{active: languages}" href="#" ng-click="changeLanguage('es')">ES</a></span>
 					</li>
 				</ul>
 			</section>

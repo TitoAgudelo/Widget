@@ -20,3 +20,20 @@ body a, body p, body span, body h6, body h5, body h4, body h3, body h2, body h1 
   line-height: 0;
   content: "";
 }
+
+/* line 19, ../../sass/globals/global.sass */
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
+/* line 24, ../../sass/globals/global.sass */
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background-color: #e55e3a;
+  color: white;
+}
+/* line 29, ../../sass/globals/global.sass */
+.top-bar-section li:not(.has-form) a.active {
+  background-color: #54bc75;
+  color: white;
+}

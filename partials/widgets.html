@@ -65,15 +65,14 @@
                         </div>
                     </div>
 				</div>
-				<div class="large-6 columns">
-					
-					<div class="widget_categories">
+				<div class="large-6 columns">		
+					<div class="widget_categories" ng-repeat="category in categories">
                         <div class="widget-title">
                             <div class="widget-photo">
-                            	<img src="_res/img/photo.png" alt="">
+                            	<img ng-src="{{category.photo}}" alt="photo-category">
                             </div>
-                            <h6>Courtney<br>Timmons</h6>
-                            <span class="subtitle">15,323 followers</span>
+                            <h6>{{category.firstName}}<br>{{category.lastName}}</h6>
+                            <span class="subtitle">{{category.followers}}</span>
                         </div>
                         <div class="widget-body">
                             <ul>
@@ -81,35 +80,61 @@
                                 	<a href="#">
                                 		<img ng-hide="imageUser" src="_res/img/categories-user-dark.png" class="ico-cat" />
                                 		<img ng-show="imageUser" src="_res/img/categories-user-red.png" class="ico-cat" />
-                                		<span>Edit user</span>
+                                		<span>{{category.edit}}</span>
                                 	</a>
                                 </li>
                                 <li ng-mouseenter="imageStatistics = true" ng-mouseleave="imageStatistics = false">
                                 	<a href="#">
                                 		<img ng-hide="imageStatistics" src="_res/img/categories-statistics-dark.png" class="ico-cat" />
                                 		<img ng-show="imageStatistics" src="_res/img/categories-statistics-red.png" class="ico-cat" />
-                                		<span>Web statistics</span>
+                                		<span>{{category.web}}</span>
                                 	</a>
                                 </li>
                                 <li ng-mouseenter="imageSetting = true" ng-mouseleave="imageSetting = false">
                                 	<a href="#">
                                 		<img ng-hide="imageSetting" src="_res/img/categories-setting-dark.png" class="ico-cat" />
                                 		<img ng-show="imageSetting" src="_res/img/categories-setting-red.png" class="ico-cat" />
-                                		<span>Upload settings</span>
+                                		<span>{{category.upload}}</span>
                                 	</a>
                                 </li>
                                 <li class="last" ng-mouseenter="imageLocation = true" ng-mouseleave="imageLocation = false">
                                 	<a href="#">
                                 		<img ng-hide="imageLocation" src="_res/img/categories-location-dark.png" class="ico-cat" />
                                 		<img ng-show="imageLocation" src="_res/img/categories-location-red.png" class="ico-cat" />
-                                		<span>Events</span>
+                                		<span>{{category.event}}</span>
                                 	</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
-				</div>
+                	<div class="widget-dropdown" ng-repeat="dropdown in dropdowns">
+	                    <ul class="dropdown-container">
+	                        <li class="first parent">
+	                        	<a href="#">
+	                        		<i class="icon-menu icon-menu5"></i>
+	                        		<span>{{dropdown.title}}</span>
+	                        	</a>
+	                            <ul>
+	                                <li class="first">
+	                                	<a href="#">{{dropdown.invite}}</a>
+	                                </li>
+	                                <li class="">
+	                                	<a href="#">{{dropdown.find}}</a>
+	                                </li>
+	                                <li class="last">
+	                                	<a href="#">{{dropdown.logout}}</a>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="last">
+	                        	<a href="#">
+	                        		<i class="icon-menu icon-menu6"></i>
+	                        		<span>{{dropdown.edit}}</span>
+	                        	</a>
+	                        </li>
+	                    </ul>
+	                </div>
+                </div>
 			</div>
 		</div>
 		<div class="large-4 columns">
@@ -154,6 +179,49 @@
                         	</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="widget-form styled boxed" id="addcomments">
+                <div class="comment-form">
+                    <form action="#">
+                        <div class="form-body">
+                            <div class="field_select">
+                                <label for="contact_name" class="label_title">Contacts</label>
+                                <select name="contact_name" id="contact_name" multiple="" data-placeholder="Choose from list" class="chzn-done" style="display: none;">
+                                </select>
+                                <div class="select-container" id="contact_name_chzn">
+                                	<ul class="select-choices">
+                                		<li class="search-choice search-choice-blue">
+                                			<span>Hello@me.com</span>
+                                		</li>
+                                		<li class="search-choice">
+                                			<span>Andy@me.com</span>
+                                		</li>
+                                	</ul>
+                                </div>
+                            </div>
+                            <div class="field_text">
+                                <label for="subject" class="label_title">Subject</label>
+                                <input type="text" name="subject" id="subject" value="" placeholder="You can add a subject" class="inputtext input_middle required" [required="string"]/>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="field_text field_textarea">
+                                <label for="styled_message" class="label_title">Message</label>
+                                <textarea cols="30" rows="10" name="styled_message" id="styled_message" placeholder="Leave your message here" class="textarea textarea_middle required" [required="string"]></textarea>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="rowSubmit clearfix">
+                            <div class="input_styled checklist">
+                                <div class="rowCheckbox checkbox-filled"><div class="custom-checkbox"><input name="save" type="checkbox" checked="" id="save" value="save" hidefocus="true" style="outline: none;"><label for="save" class="checked">Save a copy</label></div></div>
+                            </div>
+                            <span class="buton">
+                            	<input type="submit" id="send" value="Send Mail" hidefocus="true" class="gradient" >
+                            </span>
+                        </div>
+                    </form>
                 </div>
             </div>
 		</div>

@@ -1,0 +1,19 @@
+[
+	{
+			 
+		"name": "audio",
+		"porcentage": "55%",
+		"class": "green"
+	}, 
+	{ 
+		"name": "video",
+		"porcentage": "23%",
+		"class": "red"
+
+	},
+	{ 
+		"name": "foto",
+		"porcentage": "17%",
+		"class": "yellow"
+	}
+]

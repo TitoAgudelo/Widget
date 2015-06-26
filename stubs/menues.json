@@ -1,0 +1,22 @@
+[
+	{
+		"name": "registrarse",
+		"icon": "_res/img/location.png",
+		"item": 3
+	},
+	{
+		"name": "eventos",
+		"icon": "_res/img/cora.png",
+		"item": 0
+	},
+	{
+		"name": "cuenta",
+		"icon": "_res/img/user.png",
+		"item": 0
+	},
+	{
+		"name": "opciones",
+		"icon": "_res/img/setting.png",
+		"item": 0
+	}
+]
